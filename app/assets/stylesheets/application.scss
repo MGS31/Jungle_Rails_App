@@ -89,7 +89,11 @@ form.button_to {
     font-size: 1.4em;
   }
 }
-
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545 !important;
+  border-color: #dc3545;
+}
 .sticky-nav {
   background: green;
   position: sticky;
