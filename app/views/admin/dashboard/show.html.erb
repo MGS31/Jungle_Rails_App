@@ -1,2 +1,18 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<section class="admin-products-dashboard">
+<header class="page-header">
+<h1>Admin &raquo; Dashboard - Counts</h1>
+</header>
+<div class="well">
+<%= link_to '+ New Product' , [:new, :admin, :product], class: 'btn btn-info' %>
+</div>
+<section>
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Current Total Counts
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><a href="admin/products">Total Products: <%= @products_count %></li>
+    <li class="list-group-item"><a href="/">Total Categories: <%= @category_count %></li>
+  </ul>
+</div>
+</section>
