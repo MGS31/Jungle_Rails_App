@@ -7,19 +7,19 @@
     </h1>
   <% end%>
   <% if product.quantity == 0 %>
-  <div>
-  <button type="placeholder" class="btn btn-danger">Sold Out</button>
-    <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
+    <div>
+      <button type="placeholder" class="btn btn-danger">Sold Out</button>
+      <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
     disabled: true do %>
-      <%= fa_icon "shopping-cart", text: 'Add' %> 
-    <% end %>
-  </div>
+        <%= fa_icon "shopping-cart", text: 'Add' %>
+      <% end %>
+    </div>
   <% else %>
-  <div>
-    <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
+    <div>
+      <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
     method: :post do %>
-      <%= fa_icon "shopping-cart", text: 'Add' %> 
-    <% end %>
-  </div>
+        <%= fa_icon "shopping-cart", text: 'Add' %>
+      <% end %>
+    </div>
   <% end %>
 </article>
